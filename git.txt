@@ -1,0 +1,48 @@
+Command line instructions
+
+Git global setup - defining the variables:
+git config --global user.name "Norulshahlam Bin Mohsen  (NCS)"
+git config --global user.email "mohsen.nb@ncs.com.sg"
+git remote add origin <your_url_of_your_git_remote_repo.git> eg
+git remote add origin https://github.com/norulshahlam/coding.git
+
+
+once defined origin, you can check by:
+git remote -v
+
+once defined, you can check by:
+git config --global user.name
+git config --global user.email
+
+Create a new local repository
+1. make sure you are in the right folder before cloning.
+git clone https://codesparks.ncs.com.sg/git/msiw/msiw.git
+cd msiw
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Existing folder
+cd existing_folder
+git init
+git remote add origin https://codesparks.ncs.com.sg/git/msiw/msiw.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Existing Git repository
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://codesparks.ncs.com.sg/git/msiw/msiw.git
+git push -u origin --all
+git push -u origin --tags
+
+change branch
+git checkout <branch name>
+
+check current branch
+git branch
+
+creates a new branch and also switches to it.
+git checkout -b [branch name]  
